@@ -1,189 +1,354 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>1088</title>
-	<link rel="stylesheet" type="text/css" href="css/1088.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="Content-type" content="text/html;charset=utf-8" ">
-</head>
-<body>
-<div class="glc_1088_center">
-	<!-- 上部区域 -->
-	<section class="glc_1088_container_up">
-			<img src="img/up.jpg" class="glc_1088_container_up_img">
-	</section>
-	<!-- 中间区域 -->
-	<section class="glc_1088_main">
-		<!-- 中间区域的上部区域——新手注册-送专享礼券 -->
-		<div class="glc_1088_main_up">
- 			<div class="glc_1088_main_up_text">
-	 			<p>[活动时间]2017年8月10日————9月10日</p>
-	 			<p>在瑞泽会平台注册成功的新用户，即可获得由瑞泽会平台赠送的新人礼一份。</p>
-	 			<p>新人礼包括10元、28元、68元、98元、158元、258元、486元现金礼券各一份。</p>
-	 		</div>
- 			<img src="img/main-up.jpg" class="glc_1088_container_main_up_img">		
+<style type="text/css">.banner-container .nav-container{display:none;}
+.banner-container .nav-container .nav-tabs{display:none;}
+body{margin: 0;padding: 0;font: normal 62.5% Helvetica,Arial,sans-serif;}
+.glc_1088_money_imme:hover{color:white; font-size:1.5vw;}
+.glc_1088_main_center_up_submit:hover{color:#ff3600;}
+.glc_1088_money_imme:active{margin-top:2%;box-shadow: 0 0 0 0; }
+/*与网页底部的距离和颜色，根据网页改动*/
+.bottom2 {min-width: 1200px;margin-top: 50px;}
+.glc_1088_a{display: block;text-decoration: none;color: white;background-color:rgba(229,97,0,0.8);box-shadow:4px 4px 3px #f49b3d;}
+.glc_1088_center{width: 100%;min-width: 1200px;height: auto;margin: 50px 0 0 0;background: #ffb82f;}
+/*上部区域*/
+.glc_1088_container_up{width: 100%;min-width: 1200px;height: auto;margin: -14px auto;position: relative;}
+/*上部区域的图片*/
+.glc_1088_container_up_img{margin: 0;width: 100%;min-width: 1200px;}
+/*主内容区*/
+.glc_1088_main{width: 100%;min-width: 1200px;margin-top: 10px;}
+/*主内容区的上部区域*/
+.glc_1088_main_up{width: 100%;min-width: 1200px;height: auto;}
+.glc_1088_container_main_up_img{position: relative;z-index: 0;width: 100%;min-width: 1200px;height: auto;margin: 0 auto;}
+.glc_1088_main_up_text{display: block;position: absolute;z-index: 1;width: 100%;min-width: 1200px;height: auto;margin: -10px auto;text-align: center;font-size: 1.2vw;color: white;}
+/*中间区域的中部区域———立即注册按钮*/
+.glc_1088_main_center_up{width: 100%;min-width: 1200px;height: auto;margin: -3px auto;}
+.glc_1088_main_center_up_img{position: relative;z-index: 0;width: 100%;min-width: 1200px;height: auto;margin: -40px auto;}
+/*立即注册按钮*/
+.glc_1088_main_center_up_botton{position: relative;z-index: 1;width: 15%;min-width: 180px;height: 10%;margin: 2px auto;}
+.glc_1088_main_center_up_submit{width: 80%;height: 100%;margin-left: 5%;background-color: white;float: left;line-height: 70px;text-align:center;background: -webkit-linear-gradient(to right bottom,#fff3a0,#f9d926);background: -ms-linear-gradient(to right bottom,#fff3a0,#f9d926);background: -o-linear-gradient(to right bottom,#fff3a0,#f9d926);background: linear-gradient(to right bottom,#fff3a0,#f9d926);-webkit-border-radius: 6%;-moz-border-radius: 6%;-ms-border-radius: 6%;-o-border-radius: 6%;border-radius: 6%;box-shadow:  10px 10px 5px #fc9d0f;text-shadow: 4px 4px 2px rgba(254,67,17,0.2);border: 0px;color: #ff3600;font-size: 2.2vw;font-weight: 800;cursor: pointer;}
+.glc_1088_main_center_up_submit:active{margin-top: 3px;box-shadow:  0 0 0 0;}
+/*现金礼券详情*/
+.glc_1088_main_center_low{width: 100%;min-width: 1200px;height: auto;}
+.glc_1088_main_center_low_img{position: relative;z-index: 0;width: 100%;min-width: 1200px;margin-top: 70px;}
+/*现金礼券金额————上面的容器*/
+.glc_1088_main_center_low_money_up{position: absolute;z-index: 2;width: 70%;height: 22%;min-width: 960px;margin: 90px auto auto 15%;float: left;}
+/*现金礼券金额————下面的容器*/
+.glc_1088_main_center_low_money_low{position: absolute;z-index: 2;width: 70%;height: 22%;min-width: 960px;margin:auto 15%;margin-top: 350px;float: left;}
+/*各金额红包*/
+.glc_1088_main_center_low_money_up_10{position: absolute;z-index: 3;height: 100%;width: 20%;min-width: 120px;min-height: 210px;margin: auto 4%;margin-top: 1%;float: left;box-shadow:10px 10px 10px rgba(224,115,10,.5);-webkit-border-radius: 8%;-moz-border-radius: 8%;-ms-border-radius: 8%;-o-border-radius: 8%;border-radius: 8%;background: -webkit-linear-gradient(180deg,#ff8300,#e07300);background -ms-linear-gradient(180deg,#ff8300,#e07300);background  -o-linear-gradient(180deg,#ff8300,#e07300);background linear-gradient(180deg,#ff8300,#e07300);
+text-align: center;color: white;}
+.glc_1088_main_center_low_money_up_10:hover{cursor: pointer;transform: scale(0.95);}
+.glc_1088_money_sign{display: inline;line-height: 10px;font-size: 1.2vw;}
+.glc_1088_money{display: inline;font-size: 4vw;}
+.glc_1088_money_req{display: inline;font-size: 1.2vw;color: black;}
+.glc_1088_money_imme{width:80%;left:0;right:0;margin:auto;font-size: 1.2vw;line-height:40px;font-weight: 500;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;}
+.glc-hr{color: white;border: 3px solid white;}
+.glc_1088_main_center_low_money_up_28{position: absolute;z-index: 3;height: 100%;width: 20%;min-width: 120px;min-height: 210px;margin: auto 28%;margin-top: 1%;float: left;box-shadow:10px 10px 10px rgba(224,115,10,.5);border-radius: 8%;-webkit-border-radius: 8%;-moz-border-radius: 8%;-ms-border-radius: 8%;-mz-border-radius: 8%;-o-border-radius: 8%;background: -webkit-linear-gradient(180deg,#ff8300,#e07300);background -ms-linear-gradient(180deg,#ff8300,#e07300);background  -o-linear-gradient(180deg,#ff8300,#e07300);background linear-gradient(180deg,#ff8300,#e07300);text-align: center;color: white;}
+.glc_1088_main_center_low_money_up_28:hover{cursor: pointer;transform: scale(0.95);}
+.glc_1088_main_center_low_money_up_68{position: absolute;z-index: 3;height: 100%;width: 20%;min-width: 120px;min-height: 210px;margin: auto 52%;margin-top: 1%;float: left;box-shadow:10px 10px 10px rgba(224,115,10,.5);border-radius: 8%;-webkit-border-radius: 8%;-moz-border-radius: 8%;-ms-border-radius: 8%;-mz-border-radius: 8%;-o-border-radius: 8%;background: -webkit-linear-gradient(180deg,#ff8300,#e07300);background -ms-linear-gradient(180deg,#ff8300,#e07300);background  -o-linear-gradient(180deg,#ff8300,#e07300);background linear-gradient(180deg,#ff8300,#e07300);text-align: center;color: white;
+}
+.glc_1088_main_center_low_money_up_68:hover{cursor: pointer;transform: scale(0.95);}
+.glc_1088_main_center_low_money_up_98{position: absolute;z-index: 3;height: 100%;min-height: 210px;width: 20%;min-width: 120px;margin: auto 76%;margin-top: 1%;float: left;box-shadow:10px 10px 10px rgba(224,115,10,.5);border-radius: 8%;-webkit-border-radius: 8%;-moz-border-radius: 8%;-ms-border-radius: 8%;-mz-border-radius: 8%;-o-border-radius: 8%;background: -webkit-linear-gradient(180deg,#ff8300,#e07300);background -ms-linear-gradient(180deg,#ff8300,#e07300);background  -o-linear-gradient(180deg,#ff8300,#e07300);background linear-gradient(180deg,#ff8300,#e07300);text-align: center;color: white;}
+.glc_1088_main_center_low_money_up_98:hover{cursor: pointer;transform: scale(0.95);}
+.glc_1088_main_center_low_money_low_158{position: absolute;z-index: 3;height: 100%;width: 20%;min-width: 120px;min-height: 210px;margin: auto 10%;margin-top: 1%;float: left;box-shadow:10px 10px 10px rgba(224,115,10,.5);border-radius: 8%;-webkit-border-radius: 8%;-moz-border-radius: 8%;-ms-border-radius: 8%;-mz-border-radius: 8%;-o-border-radius: 8%;background: -webkit-linear-gradient(180deg,#ff8300,#e07300);background -ms-linear-gradient(180deg,#ff8300,#e07300);background  -o-linear-gradient(180deg,#ff8300,#e07300);background linear-gradient(180deg,#ff8300,#e07300);text-align: center;color: white;}
+.glc_1088_main_center_low_money_low_158:hover{cursor: pointer;transform: scale(0.95);}
+.glc_1088_main_center_low_money_low_258{position: absolute;z-index: 3;height: 100%;width: 20%;min-width: 120px;min-height: 210px;margin: auto 40%;margin-top: 1%;float: left;box-shadow:10px 10px 10px rgba(224,115,10,.5);border-radius: 8%;-webkit-border-radius: 8%;-moz-border-radius: 8%;-ms-border-radius: 8%;-mz-border-radius: 8%;-o-border-radius: 8%;background: -webkit-linear-gradient(180deg,#ff8300,#e07300);background -ms-linear-gradient(180deg,#ff8300,#e07300);background  -o-linear-gradient(180deg,#ff8300,#e07300);background linear-gradient(180deg,#ff8300,#e07300);text-align: center;color: white;}
+.glc_1088_main_center_low_money_low_258:hover{cursor: pointer;transform: scale(0.95);}
+.glc_1088_main_center_low_money_low_468{position: absolute;z-index: 3;height: 100%;width: 20%;min-width: 120px;min-height: 210px;margin: auto 70%;margin-top: 1%;float: left;box-shadow:10px 10px 10px rgba(224,115,10,.5);border-radius: 8%;-webkit-border-radius: 8%;-moz-border-radius: 8%;-ms-border-radius: 8%;-mz-border-radius: 8%;-o-border-radius: 8%;background: -webkit-linear-gradient(180deg,#ff8300,#e07300);background -ms-linear-gradient(180deg,#ff8300,#e07300);background  -o-linear-gradient(180deg,#ff8300,#e07300);background linear-gradient(180deg,#ff8300,#e07300);text-align: center;color: white;}
+.glc_1088_main_center_low_money_low_468:hover{cursor: pointer;transform: scale(0.95);}
+/*下部区域————活动规则说明*/
+.glc_1088_bottom{width: 100%;min-width: 1200px;height: auto;margin: -40px auto;}
+.glc_1088_bottom_img{position: relative;z-index: 0;width: 100%;min-width: 1200px;}
+.glc_1088_bottom_describe{position: absolute;z-index: 2;width: 100%;min-width: 1200px;height: 45%;margin-top: 40px;}
+
+.glc_1088_bottom_describe_tableup{right: 0;left: 0;margin: auto;font-size: 1.2vw;color: white;}
+.glc_1088_bottom_describe_tablelow{margin-top: 30px;width: 50%;text-align: center;left: 0;right: 0;margin: auto;border: 1px solid white;color: white;font-size: 1.2vw;}
+.glc_10{width: 100%;}</style>
+<div class="glc_1088_center"><!-- 上部区域 -->
+	<section class="glc_1088_container_up"><img src="/upload/default/columnimg/20170810095946.jpg" class="glc_1088_container_up_img" alt="" /></section><!-- 中间区域 --><section class="glc_1088_main"><!-- 中间区域的上部区域——新手注册-送专享礼券 -->
+	<div class="glc_1088_main_up"> 
+		<div class="glc_1088_main_up_text"> 
+			<p>
+				[活动时间]2017年8月11日————9月10日
+			</p> 
+			<p>
+				在瑞泽会平台注册成功的新用户，即可获得由瑞泽会平台赠送的新人礼一份。
+			</p> 
+			<p>
+				新人礼包括10元、28元、68元、98元、158元、258元、468元现金礼券各一份。
+			</p> 
+		</div> 
+		<img src="/upload/default/columnimg/20170810100025.jpg" class="glc_1088_container_main_up_img" alt="" />
+	</div><!-- 中间区域的中部区域———立即注册按钮 -->
+	<div class="glc_1088_main_center_up">
+		<div class="glc_1088_main_center_up_botton">		
+                        <a href="https://www.ruizehui.com/visitor/to-regist" class="glc_1088_main_center_up_submit"> 立即注册</a>
 		</div>
-		<!-- 中间区域的中部区域———立即注册按钮 -->
-		<div class="glc_1088_main_center_up">
-			<div class="glc_1088_main_center_up_botton">
-				<input type="submit" name="submit" value="立即注册" onclick="window.open('https://www.ruizehui.com/visitor/to-regist')" class="glc_1088_main_center_up_submit">
+		<img src="/upload/default/columnimg/20170810100127.jpg" class="glc_1088_main_center_up_img" alt="" />
+	</div><!-- 中间区域的下部区域————现金礼券详情 -->
+	<div class="glc_1088_main_center_low">
+		<div class="glc_1088_main_center_low_money_up">
+			<div class="glc_1088_main_center_low_money_up_10">                                  
+				<p>
+					<span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">10</span>
+				</p>                              
+				<hr class="glc-hr" />
+				<p class="glc_1088_money_req">
+					需单笔投资1000元
+				</p>
+				<p class="glc_1088_money_imme">
+					<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a glc_1088_money_imme"> 立即领取&nbsp;➤</a>
+				</p>                            
+			</div>                        
+			<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a"></a>
+			<div class="glc_1088_main_center_low_money_up_28">
+				<p>
+					<span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">28</span>
+				</p>
+				<hr class="glc-hr" />
+				<p class="glc_1088_money_req">                                        
+					需单笔投资5000元
+				</p>
+				<p class="glc_1088_money_imme">
+					<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a glc_1088_money_imme"> 立即领取&nbsp;➤</a>
+				</p>
+			</div>                        
+			<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a"></a>
+			<div class="glc_1088_main_center_low_money_up_68">
+				<p>
+					<span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">68</span>
+				</p>
+				<hr class="glc-hr" />
+				<p class="glc_1088_money_req">                                        
+					需单笔投资15000元
+				</p>
+				<p class="glc_1088_money_imme">
+					<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a glc_1088_money_imme"> 立即领取&nbsp;➤</a>
+				</p>
+			</div>                        
+			<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a"></a>
+			<div class="glc_1088_main_center_low_money_up_98">
+				<p>
+					<span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">98</span>
+				</p>
+				<hr class="glc-hr" />
+				<p class="glc_1088_money_req">                                        
+					需单笔投资25000元
+				</p>
+				<p class="glc_1088_money_imme">
+					<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a glc_1088_money_imme"> 立即领取&nbsp;➤</a>
+				</p>
+			</div>                       
+		</div>
+		<div class="glc_1088_main_center_low_money_low">
+			<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a"></a>
+			<div class="glc_1088_main_center_low_money_low_158">
+				<p>
+					<span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">158</span>
+				</p>
+				<hr class="glc-hr" />
+				<p class="glc_1088_money_req">                                        
+					需单笔投资30000元
+				</p>
+				<p class="glc_1088_money_imme">
+					<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a glc_1088_money_imme"> 立即领取&nbsp;➤</a>
+				</p>                           
 			</div>
-			<img src="img/main-center1.jpg" class="glc_1088_main_center_up_img">
+			<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a"></a>
+			<div class="glc_1088_main_center_low_money_low_258">
+				<p>
+					<span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">258</span>
+				</p>
+				<hr class="glc-hr" />
+				<p class="glc_1088_money_req">                                        
+					需单笔投资50000元
+				</p>
+				<p class="glc_1088_money_imme">
+					<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a glc_1088_money_imme"> 立即领取&nbsp;➤</a>
+				</p>
+			</div>                        
+			<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a"></a>
+			<div class="glc_1088_main_center_low_money_low_468">
+				<p>
+					<span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">468</span>
+				</p>
+				<hr class="glc-hr" />
+				<p class="glc_1088_money_req">                                        
+					需单笔投资100000元
+				</p>
+				<p class="glc_1088_money_imme">
+					<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a glc_1088_money_imme"> 立即领取&nbsp;➤</a>
+				</p>
+			</div>                        
 		</div>
-		<!-- 中间区域的下部区域————现金礼券详情 -->
-		<div class="glc_1088_main_center_low">
-			<!-- <div class="glc_1088_main_center_low_money overflow"> -->
-				<div class="glc_1088_main_center_low_money_up">
-					<div class="glc_1088_main_center_low_money_up_10">
-						<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a">
-							<p><span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">10</span></p>
-							<hr>
-							<P class="glc_1088_money_req">需单笔投资1000元</P>
-							<p class="glc_1088_money_imme">立即投资&nbsp;&#10148;</p>
-						</a>	
-					</div>
-					<div class="glc_1088_main_center_low_money_up_28">
-						<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a">
-							<p><span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">28</span></p>
-							<hr>
-							<P class="glc_1088_money_req">需单笔投资5000元</P>
-							<p class="glc_1088_money_imme">立即投资&nbsp;&#10148;</p>
-						</a>
-					</div>
-					<div class="glc_1088_main_center_low_money_up_68">
-						<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a">
-							<p><span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">68</span></p>
-							<hr>
-							<P class="glc_1088_money_req">需单笔投资15000元</P>
-							<p class="glc_1088_money_imme">立即投资&nbsp;&#10148;</p>
-						</a>	
-					</div>
-					<div class="glc_1088_main_center_low_money_up_98">
-						<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a">
-							<p><span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">98</span></p>
-							<hr>
-							<P class="glc_1088_money_req">需单笔投资25000元</P>
-							<p class="glc_1088_money_imme">立即投资&nbsp;&#10148;</p>
-						</a>
-					</div>
-				</div>
-				<div class="glc_1088_main_center_low_money_low">
-					<div class="glc_1088_main_center_low_money_low_158">
-						<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a">
-							<p><span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">158</span></p>
-							<hr>
-							<P class="glc_1088_money_req">需单笔投资30000元</P>
-							<p class="glc_1088_money_imme">立即投资&nbsp;&#10148;</p>
-						</a>							
-					</div>
-					<div class="glc_1088_main_center_low_money_low_258">
-						<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a">
-							<p><span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">258</span></p>
-							<hr>
-							<P class="glc_1088_money_req">需单笔投资50000元</P>
-							<p class="glc_1088_money_imme">立即投资&nbsp;&#10148;</p>
-						</a>
-					</div>
-					<div class="glc_1088_main_center_low_money_low_468">
-						<a href="https://www.ruizehui.com/loaninfo/openLoan.htm" class="glc_1088_a">
-							<p><span class="glc_1088_money_sign">￥</span><span class="glc_1088_money">468</span></p>
-							<hr>
-							<P class="glc_1088_money_req">需单笔投资100000元</P>
-							<p class="glc_1088_money_imme">立即投资&nbsp;&#10148;</p>
-						</a>
-					</div>
-				</div>
-	
-		<!-- 	</div> -->
-			<img src="img/main-center4.jpg" class="glc_1088_main_center_low_img">
-		</div>
-	
-	</section>
-	<!-- 下部区域——活动规则说明 -->
-	<section class="glc_1088_bottom">
-		<div class="glc_1088_bottom_describe">
-			<table class="glc_1088_bottom_describe_tableup">
-				<tbody>
-					<tr>
-						<td>1:</td>
-						<td>活动时间：2017年8月10日————2017年9月10日内注册的新用户；</td>
-					</tr>
-					<tr></tr>
-					<tr>
-						<td>2:</td>
-						<td>现金礼券使用时间：2017年9月10日————2017年11月10日；</td>
-					</tr>
-					<tr></tr>
-					<tr>
-						<td>3:</td>
-						<td>新人礼注册即得，使用详见【我的账户-我的礼券】，按照现金礼券激活条件投资，满标后礼券金额1-3工作日内到账，单笔投资只能激活一个现金礼券；</td>
-					</tr>
-					<tr></tr>
-					<tr>
-						<td>4:</td>
-						<td>现金礼券奖励需投资满足相应条件后方可激活使用，需在有效期内使用，过期作废</td>
-					</tr>
-					<tr></tr>
-					<tr>
-						<td>5:</td>
-						<td>瑞泽会平台在法律允许范围内对此活动具有最终解释权，如有疑问详情咨询平台在线客服或拨打全国客服热线400-991-6060。</td>
-					</tr>
-				</tbody>
-			</table>
-			<br/><br/><br/>
-			<table class="glc_1088_bottom_describe_tablelow">
-				<thead>
-					<tr>
-						<th>礼券金额</th>
-						<th>礼券激活条件</th>
-						<th>使用项目</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>10元</td>
-						<td>单笔投资1000元</td>
-						<td>1个月及以上</td>
-					</tr>
-					<tr>
-						<td>28元</td>
-						<td>单笔投资5000元</td>
-						<td>1个月及以上</td>
-					</tr>
-					<tr>
-						<td>68元</td>
-						<td>单笔投资15000元</td>
-						<td>1个月及以上</td>
-					</tr>
-					<tr>
-						<td>98元</td>
-						<td>单笔投资25000元</td>
-						<td>3个月及以上</td>
-					</tr>
-					<tr>
-						<td>158元</td>
-						<td>单笔投资30000元</td>
-						<td>3个月及以上</td>
-					</tr>
-					<tr>
-						<td>258元</td>
-						<td>单笔投资50000元</td>
-						<td>12个月及以上</td>
-					</tr>
-					<tr>
-						<td>468元</td>
-						<td>单笔投资100000元</td>
-						<td>12个月及以上</td>
-					</tr>
-				</tbody>
-				
-			</table>
-		</div>
-		<div class="glc_1088_bottom_table">
-			
-		</div>
-		<img src="img/main-bottom2.jpg" class="glc_1088_bottom_img">
-	</section>
+		<img src="/upload/default/columnimg/20170810100219.jpg" class="glc_1088_main_center_low_img" alt="" />
+	</div>
+	</section><!-- 下部区域——活动规则说明 --><section class="glc_1088_bottom">
+	<div class="glc_1088_bottom_describe">
+		<table class="glc_1088_bottom_describe_tableup     ">
+			<tbody>
+				<tr>
+					<td>
+						1:
+					</td>
+					<td>
+						活动时间：2017年8月11日————2017年9月10日内注册的新用户；
+					</td>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+					<td>
+						2:
+					</td>
+					<td>
+						新人礼注册即得，使用详见【我的账户-我的礼券】，按照现金礼券激活条件投资，满标后礼券金额1-3工作日内到账，单笔投资只能激活一个现金礼券；
+					</td>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+					<td>
+						3:
+					</td>
+					<td>
+						现金礼券奖励需满足投资相应条件后并在投资时进行勾选“使用礼券”方可激活使用，需在有效期内使用，过期作废；
+					</td>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+					<td>
+						4:
+					</td>
+					<td>
+						瑞泽会平台在法律允许范围内对此活动具有最终解释权，如有疑问详情咨询平台在线客服或拨打全国客服热线400-991-6060。
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<br />
+		<br />
+		
+		<table class="glc_1088_bottom_describe_tablelow     ">
+			<thead>
+				<tr>
+					<th>
+						礼券金额
+					</th>
+					<th>
+						礼券激活条件
+					</th>
+					<th>
+						使用项目
+					</th>
+					<th>
+						礼券有效天数
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						10元
+					</td>
+					<td>
+						单笔投资1000元
+					</td>
+					<td>
+						1个月及以上
+					</td>
+					<td>
+						30天
+					</td>
+				</tr>
+				<tr>
+					<td>
+						28元
+					</td>
+					<td>
+						单笔投资5000元
+					</td>
+					<td>
+						1个月及以上
+					</td>
+					<td>
+						30天
+					</td>
+				</tr>
+				<tr>
+					<td>
+						68元
+					</td>
+					<td>
+						单笔投资15000元
+					</td>
+					<td>
+						1个月及以上
+					</td>
+					<td>
+						30天
+					</td>
+				</tr>
+				<tr>
+					<td>
+						98元
+					</td>
+					<td>
+						单笔投资25000元
+					</td>
+					<td>
+						3个月及以上
+					</td>
+					<td>
+						60天
+					</td>
+				</tr>
+				<tr>
+					<td>
+						158元
+					</td>
+					<td>
+						单笔投资30000元
+					</td>
+					<td>
+						3个月及以上
+					</td>
+					<td>
+						60天
+					</td>
+				</tr>
+				<tr>
+					<td>
+						258元
+					</td>
+					<td>
+						单笔投资50000元
+					</td>
+					<td>
+						12个月及以上
+					</td>
+					<td>
+						60天
+					</td>
+				</tr>
+				<tr>
+					<td>
+						468元
+					</td>
+					<td>
+						单笔投资100000元
+					</td>
+					<td>
+						12个月及以上
+					</td>
+					<td>
+						60天
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="glc_1088_bottom_table">
+	</div>
+	<img src="/upload/default/columnimg/20170810100255.jpg" class="glc_1088_bottom_img" alt="" /></section>
 </div>
-</body>
-</html>
